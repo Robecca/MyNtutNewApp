@@ -3,6 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>每天睡不飽</title>
+<link rel="stylesheet"  href="css/font-awesome.min.css" >
+<link rel="stylesheet"  href="css/buttons.css">
+
+<script scr="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src"=js/buttons.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
 <link type="text/css" href="css/csshake.min.css">
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -106,7 +112,7 @@ html, body , .outer, .inner {
 </style>
 </head>
 
-<body>
+<body style="background-color:#01B0BE;">
 
 <script type="text/javascript">
 function AlertIt(){
@@ -135,14 +141,22 @@ function AlertIt(){
 <table width="100%" height ="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center" valign="middle">
-		<p>Goodmorning, Eight o'clock. - I just want to sleep in my bed rightnow :( </p>
-        <p><a href="media.html">好想睡到自然醒</a></p>
+    <p><font face="verdana" size="3" color="#666666">
+		<p>Goodmorning, Eight o'clock. </p>
+        <p>I just want to sleep in my bed rightnow :( </p></font>
+        <p><font face="Arial" size="4" color="#7fffff">
+        <p><a href="media.html" "#" class="button button-border-action button-pill">好想睡到自然醒</a></p></font>
         <div class="shake shake-slow">
 		<a href="javascript:AlertIt();">
-			<img src="images/Dog.in_.sleep_.jpg" width="33%" height="auto">
-			<p>Press me!</p>
-		</a>
-        </div>
+	    
+        <img name="img01" alt="OH!NO!" src="images/0.jpg"                
+             onmouseout="this.src='images/0.jpg'"
+             onmouseover="this.src='images/4.jpg'"
+             onclick="setBanner();"/>
+             </div>
+             
+       <p><a href="#" class="button button-pill button-caution">press me</a></p>
+       
 	</td>
   </tr>
 </table>
