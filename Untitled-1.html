@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+
+
+<SCRIPT Language="JavaScript">
+<!--
+// Valor工作室小誌 [valor Studio]
+var speed = 5000  //圖片切換時間
+var img= new Array()
+var url= new Array()
+var current = 0
+//一張圖片對應一個網址,可無限增加,編號由0開始
+img[0] = new Image(); img[0].src = "icon1.gif";	url[0] = "http://gb.twbts.com" 
+img[1] = new Image(); img[1].src = "icon2.gif";	url[1] = "http://gb.twbts.com"
+img[2] = new Image(); img[2].src = "icon3.gif";	url[2] = "http://gb.twbts.com"
+img[3] = new Image(); img[3].src = "icon4.gif";	url[3] = "http://www.twbts.com/"
+
+
+function start() 
+{
+current++
+if(current >=img.length) current = 0
+document.imgs.src = img[current].src
+setTimeout("start()",speed);
+}
+
+function go() 
+{window.location = url[current]}
+//-->
+</SCRIPT>
+
+
+</HEAD>
+
+
+<BODY onLoad="setTimeout('start()',speed);">
+
+
+<a href="javascript:go()"><img src="icon1.gif" name="imgs"></a>
+
+
+
+</BODY>
+</HTML>

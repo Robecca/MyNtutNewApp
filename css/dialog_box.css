@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dialog_box {
+  background: #559e83;
+  width: 50%;
+  height: 100px;
+  color: #3a3235;
+  padding: 1em;
+  margin: 0 auto;
+  position: relative;
+}
+.dialog_box:before {
+  content:"";
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-color: transparent #559e83 transparent transparent;
+  border-style: solid;
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
